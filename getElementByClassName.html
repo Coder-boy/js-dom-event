@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <article class="article-1">
+        <h3>article-1</h3>
+        <p class="author">author-1</p>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nihil cupiditate aperiam voluptatem inventore debitis maiores libero molestiae sequi id.</p>
+    </article>
+    <article class="article-2">
+        <h3>article-2</h3>
+        <p class="author">author-2</p>
+        <p class="description">Sed et sint vitae. Veritatis, accusantium facilis quidem vero magni, beatae commodi voluptas minus, dolores aliquam ratione nihil maxime odio.</p>
+    </article>
+    <article class="article-3">
+        <h3>article-3</h3>
+        <p class="author">author-3</p>
+        <p class="description">Itaque reiciendis, porro ut architecto nam, atque consectetur nobis rem quidem necessitatibus praesentium ducimus quod magni ratione placeat possimus eveniet.</p>
+    </article>
+
+    <script>
+        var author = document.getElementsByClassName('author');
+        for(var i = 0; i <  author.length; i++){
+
+            var element = author[i]
+            element.style.backgroundColor = 'red';
+            element.style.padding = '10px';
+            element.style.color = 'white';
+            element.style.fontSize = '20px';
+            element.style.borderRadius='20px';
+            element.innerHTML = 'lekhok'+( i + 1);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <article class="article-1 special" id="first-article">
+        <h3>article-1</h3>
+        <p class="author">author-1</p>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nihil cupiditate aperiam voluptatem inventore debitis maiores libero molestiae sequi id.</p>
+    </article>
+    <article class="article-2 special">
+        <h3>article-2</h3>
+        <p class="author">author-2</p>
+        <p class="description">Sed et sint vitae. Veritatis, accusantium facilis quidem vero magni, beatae commodi voluptas minus, dolores aliquam ratione nihil maxime odio.</p>
+    </article>
+    <article class="article-3 special ">
+        <h3>article-3</h3>
+        <p class="author">author-3</p>
+        <p class="description">Itaque reiciendis, porro ut architecto nam, atque consectetur nobis rem quidem necessitatibus praesentium ducimus quod magni ratione placeat possimus eveniet.</p>
+    </article>
+
+    <ul id="gift-item">
+        <li><a href="">gift-item 1</a></li>
+        <li><a href="">gift-item 2</a></li>
+        <li><a href="">gift-item 3</a></li>
+        <li><a href="">gift-item 4</a></li>
+        <li><a href="">gift-item 5</a></li>
+    </ul>
+    <script>
+        var author = document.getElementById('first-article');
+       
+        var newParagraph = document.createElement ('p');
+        newParagraph.innerHTML = 'This is added by javascript'
+
+        author.appendChild(newParagraph);
+
+        const ul = document.getElementById('gift-item');
+        const li = document.createElement('li');
+        li.innerHTML= 'special gift';
+
+        
+        ul.appendChild(li);
+
+        // const ul = document.getElementById('gift-item');
+        // const a = document.createElement('a');
+        // a.innerHTML= 'special gift';
+        // li.appendChild(a);
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
